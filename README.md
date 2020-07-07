@@ -7,3 +7,13 @@ files
 - Target.md         // 指定目标写在这里
 
 - Tech.md           // 技术上的问题、解决可以分享在这里
+
+members
+
+- [Ao Yuchen](https://github.com/Laffery)
+
+- [Dou Jiawei](https://github.com/1047666945)
+
+- [Xu Junhan](https://github.com/TheJunhan)
+
+- [Fu Yuhan](https://github.com/Tarosweet)
