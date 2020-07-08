@@ -30,5 +30,5 @@
 ### 07-08
 - ayc
 - djw
-- fyh
+- fyh ：调整logo 制作海报
 - xjh
