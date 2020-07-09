@@ -43,6 +43,7 @@
 
 > 解决侧边栏，登录卡片悬浮问题，完成个人中心部分组件，后端简易地实现login接口
 > /user/login (post, return user(隐私和谐))
+>/user/reg（注册，可以上传头像）
 
 ### 07-10 am
 
