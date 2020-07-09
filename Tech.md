@@ -2,7 +2,7 @@
 
 ### 用户管理
 
-单独的登陆注册页面，管理员可以封禁解禁账号。用户使用mysql，user(id, name, email(nullable), phone(注册), birthday, auth(0(ban)/1(common)/2(admin)), signtime)
+单独的登陆注册页面，管理员可以封禁解禁账号。用户使用mysql，user(id, name, sex, avatar, phone(注册), birthday, auth(0(ban)/1(common)/2(admin)), signtime)
 
 登陆之前可以查看分类，不能看到推荐/关注的动态，不能进行点赞等操作（会提示需要是否选择登录）
 
