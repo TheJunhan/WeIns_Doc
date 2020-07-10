@@ -62,7 +62,7 @@
 * Ao Yuchen
 
 * Xu Junhan
-
+  * 10:00-完成了注册登录，规范了前后端接口，细节见week1文档
 * Dou Jiawei
 
 * Fu Yuhan
