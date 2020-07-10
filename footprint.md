@@ -59,19 +59,19 @@
 
 ### 07-10
 
-Ao Yuchen
-
-Xu Junhan
-
-* 10:00-完成了注册登录，规范了前后端接口，细节见week1文档
-
-
-Dou Jiawei
-
-* 优化前段逻辑，修复了图片显示、zindex错误、注册入口错误等bug。
-* 添加了上传图片视频、转码、查看图片详情等功能
-
-Fu Yuhan
+* Ao Yuchen
+  * 完成转发的弹出框
+  * 完成个人主页页面布局
+  * 个人资料卡组件
+  * 我的动态组件
+* Xu Junhan
+  * 完成注册登录
+  * 规范前后端接口，细节见[week1文档](/meeting/week1.md)
+* Dou Jiawei
+  * 优化前端逻辑，修复了图片显示、z-index错误、注册入口错误等bug。
+  * 添加了上传图片视频、转码、查看图片详情等功能
+* Fu Yuhan
+  * coming ...
 
 ## Week2
 
