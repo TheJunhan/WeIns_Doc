@@ -60,63 +60,54 @@
 ### 07-10
 
 * Ao Yuchen
-
+  * 完成转发的弹出框
+  * 完成个人主页页面布局
+  * 个人资料卡组件
+  * 我的动态组件
 * Xu Junhan
-  * 10:00-完成了注册登录，规范了前后端接口，细节见week1文档
+  * 完成注册登录
+  * 规范前后端接口，细节见[week1文档](/meeting/week1.md)
 * Dou Jiawei
-
+  * 优化前端逻辑，修复了图片显示、z-index错误、注册入口错误等bug。
+  * 添加了上传图片视频、转码、查看图片详情等功能
 * Fu Yuhan
+  * coming ...
 
 ## Week2
 
 ### 07-13
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-14
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-15
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-16
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-17
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ## Week3
@@ -124,51 +115,36 @@
 ### 07-20
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-21
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-22
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-23
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-24
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ## Week4
@@ -176,49 +152,34 @@
 ### 07-27
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-28
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-29
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-30
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
 
 ### 07-31
 
 * Ao Yuchen
-
 * Xu Junhan
-
 * Dou Jiawei
-
 * Fu Yuhan
