@@ -16,10 +16,16 @@
     * 删评论
 * 动态
   * 发布
+    * 支持附带图片，视频（.mp4格式）
+    * 附加可见范围-全部/好友/自己
   * 转发
+    * 附带评论
   * 查看
+    * 点击图片查看放大图片
   * 点赞
+    * 点赞完成图标变化
   * 收藏
+    * 收藏完成图标变化
   * 修改
   * 删除
   * 评论
@@ -45,7 +51,10 @@
   * Database
     * MySql
     * MongoDB
-  * More ...
+  * Cloud Server
+    * AWS
+  * Other Tools
+    * Postman
 * Devops
   * Container
     * GitHub
@@ -54,4 +63,4 @@
   * More ...
 * More ...
 
-Update Coming Soon ...
+More Update Coming Soon ...
