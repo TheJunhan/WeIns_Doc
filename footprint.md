@@ -80,6 +80,9 @@
 ### 07-13
 
 * Ao Yuchen
+  * 这周转后端（全栈开发）
+  * API文档用户部分
+  * 后端User完成Dao, Service层
 * Xu Junhan
 * Dou Jiawei
 * Fu Yuhan
