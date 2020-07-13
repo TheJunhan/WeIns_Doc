@@ -2,10 +2,10 @@
 
 ## Members
 
-* [Ao Yuchen](https://github.com/Laffery)
-* [Dou Jiawei](https://github.com/1047666945)
-* [Xu Junhan](https://github.com/TheJunhan)
-* [Fu Yuhan](https://github.com/Tarosweet)
+* [Ao Yuchen](https://github.com/Laffery) - a relentless format optimization machines
+* [Dou Jiawei](https://github.com/1047666945) - a radical special effects explorer
+* [Xu Junhan](https://github.com/TheJunhan) - a lonely back-end builders
+* [Fu Yuhan](https://github.com/Tarosweet) - an elegant art supervisor
 
 ## Files
 
@@ -13,3 +13,4 @@
 * [Meeting Minutes](meeting/)
 * [Schedule](schedule.md)
 * [Footprint](footprint.md)
+* [Api](Api.md)
