@@ -84,6 +84,7 @@
   * API文档用户部分
   * 后端User完成Dao, Service层
 * Xu Junhan
+  * 完成了后端数据库设计，接下来后端部分交由ayc负责，我负责服务器。
 * Dou Jiawei
 * Fu Yuhan
 
