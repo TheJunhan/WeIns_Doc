@@ -69,16 +69,20 @@
   * 规范前后端接口，细节见[week1文档](/meeting/week1.md)
   * 开始学习使用服务器
 * Dou Jiawei
-  * 优化前端逻辑，修复了图片显示、z-index错误、注册入口错误等bug。
+  * 优化前端逻辑，修复了图片显示、z-index错误、注册入口错误等bug
   * 添加了上传图片视频、转码、查看图片详情等功能
 * Fu Yuhan
-  * coming ...
+  * 完成个人资料页的组件代码编写
+  * 调整需要用到的海报以及图片
 
 ## Week2
 
 ### 07-13
 
 * Ao Yuchen
+  * 这周转后端（全栈开发）
+  * API文档用户部分
+  * 后端User完成Dao, Service层
 * Xu Junhan
 * Dou Jiawei
 * Fu Yuhan
