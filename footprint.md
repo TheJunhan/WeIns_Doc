@@ -79,13 +79,22 @@
 
 ### 07-13
 
-* Ao Yuchen
-  * 这周转后端（全栈开发）
-  * API文档用户部分
-  * 后端User完成Dao, Service层
-* Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+Ao Yuchen
+
+* 这周转后端（全栈开发）
+* API文档用户部分
+* 后端User完成Dao, Service层
+
+
+Xu Junhan
+
+Dou Jiawei
+
+* 添加了axios接口，修复了按钮不能点击的问题，添加了标签选择功能，能实现标签选择删除添加搜素。
+* 尝试修复路由切换出现僵死的bug，预计本周修复
+* 重新设计确认了数据库表结构
+
+Fu Yuhan
 
 ### 07-14
 
