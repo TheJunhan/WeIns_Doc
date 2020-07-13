@@ -6,15 +6,31 @@ This is a document of API. First of all, the port is 8088
 
 ------
 
+### /getOne
+
+- type: GET
+
+- arg: id
+
+- return: all attributes of user
+
+### /getAll
+
+- type: GET
+
+- arg: null
+
+- return: all user
+
 ### /login
 
 - type: POST
 
-- arg: User(phone, password)
+- arg: ph(phone), pwd(password)
 
 - return: User(id, name, sex, type, reg_time, birthday)
 
-- intro: 若无对应用户，返回id为-1；
+- intro: 若无对应用户，返回id为-1；密码错误返回id为-2；用户权限请参考[week1](meeting/week1.md)
 
 ### /reg
 
