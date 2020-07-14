@@ -99,6 +99,7 @@
   * 用户关注/取关功能
   * 优化了用户的数据库架构
 * Xu Junhan
+  * 生成label&发表动态
 * Dou Jiawei
 * Fu Yuhan
   * 优化评论组件
