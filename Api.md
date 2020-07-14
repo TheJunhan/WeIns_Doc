@@ -52,6 +52,18 @@ This is a document of API. First of all, the port is 8088
 
 - intro: 成功返回“success”，用户名已存在返回“name error”，电话号码已注册返回“phone error”
 
+### /follow
+
+- type: POST
+
+- arg: sub(动作的主语用户id)，obj(宾语用户id)，flag(1/-1)
+
+- return: String
+
+- intro: flag: 1 为关注，-1为取关；返回值"self"表示对自己操作，即sub等于obj，但是这种情形一般不存在（前端没有对应的入口）/"success"/"flag"表示flag不为1/-1；
+
+> 后端实现存在可能已经关注但是依然收到了关注的请求/诸如此类没有核实存在性的bug，但是这个问题可以希望并且完全可以依靠在前端的实现--即用户只能看到自己关注的用户，不存在入口可以发送上述bug的请求
+
 ## /blog
 
 ------
