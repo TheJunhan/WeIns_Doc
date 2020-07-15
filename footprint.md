@@ -110,6 +110,7 @@
 
 * Ao Yuchen
 * Xu Junhan
+  * 发布动态、拉取当前用户可见动态、根据标签拉取动态、未登录界面展示动态接口正式上线
 * Dou Jiawei
 * Fu Yuhan
 
