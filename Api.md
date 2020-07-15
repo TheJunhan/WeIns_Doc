@@ -69,7 +69,7 @@ This is a document of API. First of all, the port is 8088
 ------
 
 ### /setLabel
-- type: POST&GET
+- type: POST
 
 - arg: String label
 
@@ -78,7 +78,7 @@ This is a document of API. First of all, the port is 8088
 - intro: 给管理员用户使用，添加新的label
 
 ### /setBlog
-- type: POST&GET
+- type: POST
 
 - arg: Integer uid, Integer type, Integer post_day,String video, String imag, String label, String username, String avatar
 
@@ -89,6 +89,36 @@ This is a document of API. First of all, the port is 8088
     最高位0代表非转发，1代表转发；后两位00代表自己可见，01代表粉丝可见，11代表公开。例子：type=7代表转发且公开
     
     imag和label是使用JSON将数组转化为string的参数。他们的转化前类型为：imag: List< String>; label: List< Label>.
+    
+### /getPublicBlogs
+  - type: GET
+    
+  - arg: 无
+    
+  - return: List< JSONObject>
+    
+  - intro: 给没有登陆的用户看的动态界面，所有不是公开的动态都不可见。JSONObject的格式为：
+  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
+
+### /getBlogsByLabel
+  - type: GET
+    
+  - arg: Integer lid, Integer uid
+    
+  - return: List< JSONObject>
+    
+  - intro: 根据标签请求动态，同样会屏蔽该用户不可见动态。JSONObject的格式为：
+  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
+
+### /getBlogsLogined
+  - type: GET
+    
+  - arg: Integer uid
+    
+  - return: List< JSONObject>
+    
+  - intro: 给登陆的用户看的动态界面。JSONObject的格式为：
+  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
 
 ### /release
 
