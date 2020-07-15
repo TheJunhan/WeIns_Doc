@@ -14,3 +14,7 @@
 * [Schedule](schedule.md)
 * [Footprint](footprint.md)
 * [Api](Api.md)
+
+## Learning Resources
+
+* [SE-128](https://github.com/sjtu-se128)
