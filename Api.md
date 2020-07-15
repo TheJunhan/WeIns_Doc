@@ -68,6 +68,28 @@ This is a document of API. First of all, the port is 8088
 
 ------
 
+### /setLabel
+- type: POST&GET
+
+- arg: String label
+
+- return: void
+
+- intro: 给管理员用户使用，添加新的label
+
+### /setBlog
+- type: POST&GET
+
+- arg: Integer uid, Integer type, Integer post_day,String video, String imag, String label, String username, String avatar
+
+- return: Integer id（代表该动态的存储id）
+
+- intro: type使用三位二进制代表动态的两种状态
+
+    最高位0代表非转发，1代表转发；后两位00代表自己可见，01代表粉丝可见，11代表公开。例子：type=7代表转发且公开
+    
+    imag和label是使用JSON将数组转化为string的参数。他们的转化前类型为：imag: List< String>; label: List< Label>.
+
 ### /release
 
 - type: POST
