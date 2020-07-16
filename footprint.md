@@ -132,8 +132,16 @@ Fu Yuhan
 
 * Ao Yuchen
 * Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+
+
+Dou Jiawei
+
+* 添加了三个测试文件
+
+
+Fu Yuhan
+
+* 编写业务逻辑
 
 ### 07-17
 
