@@ -101,13 +101,13 @@
   - 登录
     - 发送请求：String phone, String password
     - 返回值：
-    
+
     res为false时用电话或密码错误登陆失败
-    
+
     base64可能返回字符串 "default"说明用了默认头像
-    
+
     reg_time返回了一个BigDecimal型数据，具体值为该用户注册时new Date().getTime() / 1000.0，为减轻计算压力，发给前端计算
-    
+
     其他返回值是平凡的(password和phone等暴露个人信息的值没有返回)：uid、name、sex、birthday
 
 - 上述接口作废，新的接口参见[API](./Api.md)
