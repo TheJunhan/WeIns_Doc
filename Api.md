@@ -119,37 +119,66 @@ This is a document of API. First of all, the port is 8088
     imag和label是使用JSON将数组转化为string的参数。他们的转化前类型为：imag: List< String>; label: List< Label>.
 
 ### /getPublicBlogs
-
-- type: GET
-
-- arg: 无
-
-- return: List< JSONObject>
-
-- intro: 给没有登陆的用户看的动态界面，所有不是公开的动态都不可见。JSONObject的格式为：
-  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
+  - type: GET
+    
+  - arg: 无
+    
+  - return: List< JSONObject>
+    
+  - intro: 给没有登陆的用户看的动态界面，所有不是公开的动态都不可见。JSONObject的格式为：
+  
+  [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
+  
+  其中如果非转发，reblog和reblogMongo的值是"null"，由于该格式较为复杂，下面提供一个实例(该例子只含blog和blogMongo)：
+  
+  [{"blogMongo":{"comments":[],"id":3,"images":["default","default","default","default"],"labels":[{"content":"学习","flag":0,"id":2},{"content":"游戏","flag":0,"id":3}],"useravatar":"default","video":"null","who_like":[]},"blog":{"com_number":0,"id":3,"like":0,"post_day":"2020-7-15","reblog":0,"type":3,"uid":1,"username":"徐珺涵"}}]
 
 ### /getBlogsByLabel
-
-- type: GET
-
-- arg: Integer lid, Integer uid
-
-- return: List< JSONObject>
-
-- intro: 根据标签请求动态，同样会屏蔽该用户不可见动态。JSONObject的格式为：
-  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
+  - type: GET
+    
+  - arg: Integer lid, Integer uid
+    
+  - return: List< JSONObject>
+    
+  - intro: 根据标签请求动态，同样会屏蔽该用户不可见动态。JSONObject的格式为：
+  [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
 
 ### /getBlogsLogined
-
-- type: GET
-
-- arg: Integer uid
-
-- return: List< JSONObject>
-
-- intro: 给登陆的用户看的动态界面。JSONObject的格式为：
-  [{key:"blog", value:Blog}, {key:"blogMongo", value:BlogMongo}]
+  - type: GET
+    
+  - arg: Integer uid
+    
+  - return: List< JSONObject>
+    
+  - intro: 给登陆的用户看的动态界面。JSONObject的格式为：
+  [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
+  
+### /setLike
+  - type: POST
+    
+  - arg: Integer uid, Integer bid
+    
+  - return: boolean
+    
+  - intro: 点赞。如果返回false则说明该用户已赞过。
+  
+### /removeLike
+  - type: POST
+    
+  - arg: Integer uid, Integer bid
+    
+  - return: boolean
+    
+  - intro: 取消点赞。如果返回false则说明该用户没赞过。
+  
+### /collect
+  - type: POST
+    
+  - arg: Integer uid, Integer bid, boolean flag
+    
+  - return: boolean
+    
+  - intro: flag=1收藏该动态。flag=0取消收藏。
 
 ### /release
 
