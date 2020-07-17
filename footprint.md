@@ -108,40 +108,29 @@
 
 ### 07-15
 
-Ao Yuchen
-
-* user相关的所有单元测试
-* 修改用户权限的接口
-
-
-Xu Junhan
-
-* 发布动态、拉取当前用户可见动态、根据标签拉取动态、未登录界面展示动态接口正式上线
-
-
-Dou Jiawei
-
-* 完成了signin和signup的单元测试
-* 修改了前端bug：生日计算比正常少一个月
-
-Fu Yuhan
-
-* 修复个人中心页面bug，开始编写业务逻辑
+* Ao Yuchen
+  * user相关的所有单元测试
+  * 修改用户权限的接口
+* Xu Junhan
+  * 发布动态、拉取当前用户可见动态、根据标签拉取动态、未登录界面展示动态接口正式上线
+* Dou Jiawei
+  * 完成了signin和signup的单元测试
+  * 修改了前端bug：生日计算比正常少一个月
+* Fu Yuhan
+  * 修复个人中心页面bug，开始编写业务逻辑
 
 ### 07-16
 
 * Ao Yuchen
+  * 完成前端注册/登录业务逻辑的bug修复
+  * 个人中心页面的前后端通信
+  * 优化权限分级制度并实现auth接口
 * Xu Junhan
-
-
-Dou Jiawei
-
-* 添加了三个测试文件
-
-
-Fu Yuhan
-
-* 编写业务逻辑
+  * coming soon ...
+* Dou Jiawei
+  * 添加了三个测试文件
+* Fu Yuhan
+  * 编写业务逻辑
 
 ### 07-17
 

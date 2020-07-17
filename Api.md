@@ -108,7 +108,7 @@ This is a document of API. First of all, the port is 8088
 
 - type: POST
 
-- arg: Integer uid, Integer type, Integer post_day,String video, String imag, String label, String username, String avatar
+- arg: Integer uid, Integer type, String content, Integer post_day,String video, String imag, String label, String username, String avatar
 
 - return: Integer id（代表该动态的存储id）
 
@@ -119,67 +119,103 @@ This is a document of API. First of all, the port is 8088
     imag和label是使用JSON将数组转化为string的参数。他们的转化前类型为：imag: List< String>; label: List< Label>.
 
 ### /getPublicBlogs
-  - type: GET
-    
-  - arg: 无
-    
-  - return: List< JSONObject>
-    
-  - intro: 给没有登陆的用户看的动态界面，所有不是公开的动态都不可见。JSONObject的格式为：
+
+- type: GET
+
+- arg: 无
+
+- return: List< JSONObject>
+
+- intro: 给没有登陆的用户看的动态界面，所有不是公开的动态都不可见。JSONObject的格式为：
   
   [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
   
-  其中如果非转发，reblog和reblogMongo的值是"null"，由于该格式较为复杂，下面提供一个实例(该例子只含blog和blogMongo)：
+  其中如果非转发，reblog和reblogMongo的值是"null"，如果转发的动态已经删除，那么reblog和reblogMongo返回的是"del",其他拉取动态在此方面的规则类似，不做赘述。
+  
+  由于上述格式较为复杂，下面提供一个实例(该例子只含blog和blogMongo)：
   
   [{"blogMongo":{"comments":[],"id":3,"images":["default","default","default","default"],"labels":[{"content":"学习","flag":0,"id":2},{"content":"游戏","flag":0,"id":3}],"useravatar":"default","video":"null","who_like":[]},"blog":{"com_number":0,"id":3,"like":0,"post_day":"2020-7-15","reblog":0,"type":3,"uid":1,"username":"徐珺涵"}}]
 
 ### /getBlogsByLabel
-  - type: GET
-    
-  - arg: Integer lid, Integer uid
-    
-  - return: List< JSONObject>
-    
-  - intro: 根据标签请求动态，同样会屏蔽该用户不可见动态。JSONObject的格式为：
+
+- type: GET
+
+- arg: Integer lid, Integer uid
+
+- return: List< JSONObject>
+
+- intro: 根据标签请求动态，同样会屏蔽该用户不可见动态。
+
+JSONObject的格式为：
   [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
 
 ### /getBlogsLogined
-  - type: GET
-    
-  - arg: Integer uid
-    
-  - return: List< JSONObject>
-    
-  - intro: 给登陆的用户看的动态界面。JSONObject的格式为：
+
+- type: GET
+
+- arg: Integer uid
+
+- return: List< JSONObject>
+
+- intro: 给登陆的用户看的动态界面。JSONObject的格式为：
   [{key:"blog", valueType:Blog}, {key:"blogMongo", valueType:BlogMongo}, {key:"reblog", valueType:Blog/String}, {key:"reblogMongo", valueType:BlogMongo/String}]
   
 ### /setLike
-  - type: POST
-    
-  - arg: Integer uid, Integer bid
-    
-  - return: boolean
-    
-  - intro: 点赞。如果返回false则说明该用户已赞过。
-  
-### /removeLike
-  - type: POST
-    
-  - arg: Integer uid, Integer bid
-    
-  - return: boolean
-    
-  - intro: 取消点赞。如果返回false则说明该用户没赞过。
-  
-### /collect
-  - type: POST
-    
-  - arg: Integer uid, Integer bid, boolean flag
-    
-  - return: boolean
-    
-  - intro: flag=1收藏该动态。flag=0取消收藏。
-
-### /release
 
 - type: POST
+
+- arg: Integer uid, Integer bid
+
+- return: boolean
+
+- intro: 点赞。如果返回false则说明该用户已赞过。
+  
+### /removeLike
+
+- type: POST
+
+- arg: Integer uid, Integer bid
+
+- return: boolean
+
+- intro: 取消点赞。如果返回false则说明该用户没赞过。
+  
+### /collect
+
+- type: POST
+
+- arg: Integer uid, Integer bid, boolean flag
+
+- return: boolean
+
+- intro: flag=1收藏该动态。flag=0取消收藏。
+
+### /setReblog
+
+- type: POST
+
+- arg: Integer uid, Integer bid, Integer type, String content, String post_day, String username, String useravatar
+
+- return: boolean
+
+- intro: 转发（转发时转发者仅允许添加文字）
+  
+### /removeBlog
+  
+- type: POST
+
+- arg: Integer uid, Integer bid, Integer type
+
+- return: boolean
+
+- intro: 返回false时是该用户无权删除。返回true删除成功。
+  
+### /setComment
+
+- type: POST
+
+- arg: Integer uid, String username, Integer to_uid, String to_username, Integer bid, String content
+
+- return: boolean
+
+- intro: 评论
