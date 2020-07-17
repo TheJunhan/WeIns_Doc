@@ -137,7 +137,9 @@
 * Ao Yuchen
 * Xu Junhan
 * Dou Jiawei
+  * 完成所有前端测试
 * Fu Yuhan
+  * 编写前端的关注粉丝相关组件
 
 ## Week3
 
