@@ -2,17 +2,27 @@
 
 ## 07-06
 
-讨论了如何使用GitHub、如何注册AWS、简明地讨论了项目的结构
+讨论了如何使用GitHub(包括pr和merge等操作，便于以后的项目各成员线上的合作）、如何注册AWS（主要根据ppt上的内容以及自己搜索资料）
+
+简明地讨论了项目的大体结构
 
 ## 07-07
 
-主要讨论了大体的架构
+主要讨论了大体的项目架构，如下：
 
 ### 用户管理
 
-单独的登陆注册页面，管理员可以封禁解禁账号。用户使用mysql，user(id, name, sex, avatar, phone(注册), birthday, auth(0(ban)/1(common)/2(admin)), signtime)
+设置单独的登陆注册页面，管理员可以封禁解禁账号。
 
-登陆之前可以查看分类，不能看到推荐/关注的动态，不能进行点赞等操作（会提示需要是否选择登录）
+用户使用mysql
+
+user(id, birthday,name,password, phone(注册,每个用户的phone不能相同),reg_time,sex,  auth(0(ban)/1(common)/2(admin)))
+
+用户在mongodb中维护
+
+userMongo("id","avatar","follower_num","following_num","blog_num","followers",followings)
+
+登陆之前可以查看分类，但是不能看到推荐/关注的动态，不能进行点赞等操作（会出现窗口提示需要是否选择登录）
 
 ### 主页
 
@@ -29,7 +39,7 @@
 动态被哪些人评论/转发/点赞/收藏
 哪些人评论/转发/点赞/收藏了哪些动态
 
-关注/粉丝 直接在mongo里面存对应的所有id
+关注/粉丝 在mongo里面存对应的所有id
 
 ### 动态
 
@@ -67,14 +77,14 @@
 
 ### 管理员权限分级规定
 
-- banned(-1)
+- banned(原来权限-8)
 - 普通用户(0)
 - 用户管理员(4) (对应二进制：100)
 - 删帖子(2) (对应二进制：010)
 - 删评论(1) (对应二进制：001)
 - 最高管理员(7) (对应二进制：111)
 
-对于用户/管理员界面的说明： 管理员基本上复用普通用户的界面，对于管理员不同的权限所多出来的操作，只需要用v-if来处理即可
+对于用户/管理员界面的说明： 管理员基本上可以复用普通用户的界面，对于管理员不同的权限所多出来的操作，只需要用v-if来处理即可，不需要编写单独的页面
 
 ## 07-09
 
@@ -100,7 +110,14 @@
     - base64可以是base64的图片，也可以是"default"代表用户使用了默认头像，这样不必要在后端进行写入可以节省后端计算资源。
   - 登录
     - 发送请求：String phone, String password
-    - 返回值：res为false时用电话或密码错误登陆失败、&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    base64可能返回字符串 "default"说明用了默认头像、&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    reg_time返回了一个BigDecimal型数据，具体值为该用户注册时new Date().getTime() / 1000.0，为减轻计算压力，发给前端计算、&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    - 返回值：
+
+    res为false时用电话或密码错误登陆失败
+
+    base64可能返回字符串 "default"说明用了默认头像
+
+    reg_time返回了一个BigDecimal型数据，具体值为该用户注册时new Date().getTime() / 1000.0，为减轻计算压力，发给前端计算
+
     其他返回值是平凡的(password和phone等暴露个人信息的值没有返回)：uid、name、sex、birthday
+
+- 上述接口作废，新的接口参见[API](./Api.md)
