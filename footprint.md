@@ -135,9 +135,14 @@
 ### 07-17
 
 * Ao Yuchen
+  * 个人中心路由
+  * 一些杂七杂八的优化
 * Xu Junhan
+  * coming soon ... (昨天的别忘了写)
 * Dou Jiawei
+  * 完成所有前端测试
 * Fu Yuhan
+  * 编写前端的关注粉丝相关组件
 
 ## Week3
 
