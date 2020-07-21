@@ -126,7 +126,7 @@
   * 个人中心页面的前后端通信
   * 优化权限分级制度并实现auth接口
 * Xu Junhan
-  * coming soon ...
+  * 完成了点赞、收藏、转发等功能。
 * Dou Jiawei
   * 添加了三个测试文件
 * Fu Yuhan
@@ -135,7 +135,10 @@
 ### 07-17
 
 * Ao Yuchen
+  * 个人中心路由
+  * 一些杂七杂八的优化
 * Xu Junhan
+  * 测试了后端动态部分接口正确性
 * Dou Jiawei
   * 完成所有前端测试
 * Fu Yuhan
@@ -145,10 +148,23 @@
 
 ### 07-20
 
-* Ao Yuchen
-* Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+Ao Yuchen
+
+* 完成发布动态
+* 登录页面新增了管理员入口
+* 个人中心计数器组件和我的动态组件的拉取数据
+
+
+Xu Junhan
+
+* 完成了服务器的前后端部署，现在可以url访问了
+
+
+Dou Jiawei
+
+* 优化了个人信息界面ui和逻辑
+
+Fu Yuhan
 
 ### 07-21
 
