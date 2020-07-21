@@ -161,6 +161,7 @@
 
 * Ao Yuchen
 * Xu Junhan
+  * 增加了删评、通过id查看动态接口，修复了用户头像实时更新和评论不能显示bug
 * Dou Jiawei
 * Fu Yuhan
 
