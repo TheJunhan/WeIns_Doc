@@ -173,10 +173,17 @@
 
 ### 07-22
 
-* Ao Yuchen
-* Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+Ao Yuchen
+
+Xu Junhan
+
+Dou Jiawei
+
+* 修复了用户信息界面不能正确查重的bug
+* 修复了用户信息界面两个编辑面板不能同时编辑的bug
+* 新增了几个页面的e2e测试
+
+Fu Yuhan
 
 ### 07-23
 
