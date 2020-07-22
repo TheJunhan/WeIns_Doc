@@ -148,37 +148,28 @@
 
 ### 07-20
 
-Ao Yuchen
-
-* 完成发布动态
-* 登录页面新增了管理员入口
-* 个人中心计数器组件和我的动态组件的拉取数据
-
-Xu Junhan
-
-* 完成了服务器的前后端部署，现在可以url访问了
-
-Dou Jiawei
-
-* 优化了个人信息界面ui和逻辑
-
-Fu Yuhan
+* Ao Yuchen
+  * 完成发布动态
+  * 登录页面新增了管理员入口
+  * 个人中心计数器组件和我的动态组件的拉取数据
+* Xu Junhan
+  * 完成了服务器的前后端部署，现在可以url访问了
+* Dou Jiawei
+  * 优化了个人信息界面ui和逻辑
+* Fu Yuhan
+  * 用户表组件
 
 ### 07-21
 
-Ao Yuchen
-
-Xu Junhan
-
-* 增加了删评、通过id查看动态接口，修复了用户头像实时更新和评论不能显示bug
-
-
-Dou Jiawei
-
-* 研究了e2e测试文档
-* 编写了登陆card的测试js文件
-
-Fu Yuhan
+* Ao Yuchen
+  * 魔改blog组件
+* Xu Junhan
+  * 增加了删评、通过id查看动态接口，修复了用户头像实时更新和评论不能显示bug
+* Dou Jiawei
+  * 研究了e2e测试文档
+  * 编写了登陆card的测试js文件
+* Fu Yuhan
+  * 用户管理界面
 
 ### 07-22
 
