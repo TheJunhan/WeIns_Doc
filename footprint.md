@@ -193,10 +193,18 @@
 
 ### 07-24
 
-* Ao Yuchen
-* Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+Ao Yuchen
+
+Xu Junhan
+
+Dou Jiawei
+
+* 完成了e2e测试
+* 修改了管理员删除博客会自动登出的bug
+* 完善了管理界面搜算ban用户等等操作
+* 修改了管理员权限封禁的bug
+
+Fu Yuhan
 
 ## Week4
 
