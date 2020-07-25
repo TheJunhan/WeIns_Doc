@@ -187,6 +187,7 @@
 ### 07-23
 
 * Ao Yuchen
+  * 动态的转发/评论功能
 * Xu Junhan
   * spring-security发现前端无法访问，开始学习jwt。
 * Dou Jiawei
@@ -194,19 +195,17 @@
 
 ### 07-24
 
-Ao Yuchen
-
-Xu Junhan
-* 增加了jwt，前端已经可以使用。
-
-Dou Jiawei
-
-* 完成了e2e测试
-* 修改了管理员删除博客会自动登出的bug
-* 完善了管理界面搜算ban用户等等操作
-* 修改了管理员权限封禁的bug
-
-Fu Yuhan
+* Ao Yuchen
+  * 实现了他人主页以及从公开动态上点击名字进入其主页的功能
+  * 至此完成了基本功能的全部接口
+* Xu Junhan
+  * 增加了jwt，前端已经可以使用
+* Dou Jiawei
+  * 完成了e2e测试
+  * 修改了管理员删除博客会自动登出的bug
+  * 完善了管理界面搜算ban用户等等操作
+  * 修改了管理员权限封禁的bug
+* Fu Yuhan
 
 ## Week4
 
