@@ -258,3 +258,17 @@ JSONObject的格式为：
 - return List < JSONObject>
 
 - intro: 可以查看这个人全部动态。建议用做个人主页和管理员查找某个人的所有动态。
+
+### BUG
+
+- 发布评论：后台mongo不能自己生成cid
+
+- 转发：
+
+  - 原动态转发数不变
+
+  - 原动态的username会被转发者覆盖
+
+- getBlogsLogined 返回的信息不完整
+
+- 收藏依稀好像有点问题

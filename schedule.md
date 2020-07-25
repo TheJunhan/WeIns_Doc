@@ -120,21 +120,33 @@
 
 - 完善基本功能
 
-- 待定
+- e2e
+
+- spring security
 
 ### 07-23
 
 - 完善基本功能
 
-- 待定
+- e2e
+
+- spring security 前后端交互
 
 ### 07-24
 
 - 完善基本功能
 
-- 待定
+- e2e完成
+
+- security改用 jwt
+
+- e2e
 
 ## Week4
+
+- 压力测试及优化
+
+- security
 
 ### 07-27
 
