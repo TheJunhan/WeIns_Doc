@@ -108,7 +108,7 @@ This is a document of API. First of all, the port is 8088
 
 - type: POST
 
-- arg: Integer uid, Integer type, String content, Integer post_day,String video, String imag, String label, String username, String avatar
+- arg: BlogUtil {Integer uid, Integer type, String content, Integer post_day,String video, String imag, String label, String username, String avatar}
 
 - return: Integer id（代表该动态的存储id）
 
@@ -153,7 +153,6 @@ This is a document of API. First of all, the port is 8088
        "blog":{"coll_number":0,"com_number":3,"id":1,"is_del":0,"like":0,"post_day":"2020-7-15","reblog":0,"reblog_id":-1,"type":3,"uid":1,"username":"老八"}
        
        }
-       
   ]
 
 ### /getBlogsByLabel
@@ -239,6 +238,7 @@ JSONObject的格式为：
 - return: boolean
 
 - intro: 评论
+
 ### /removeComment
 
 - type: POST
@@ -255,6 +255,6 @@ JSONObject的格式为：
 
 - arg: Integer uid
 
-- return List<JSONObject>
+- return List < JSONObject>
 
 - intro: 可以查看这个人全部动态。建议用做个人主页和管理员查找某个人的所有动态。

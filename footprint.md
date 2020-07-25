@@ -155,22 +155,34 @@
 * Xu Junhan
   * 完成了服务器的前后端部署，现在可以url访问了
 * Dou Jiawei
+  * 优化了个人信息界面ui和逻辑
 * Fu Yuhan
+  * 用户表组件
 
 ### 07-21
 
 * Ao Yuchen
+  * 魔改blog组件
 * Xu Junhan
   * 增加了删评、通过id查看动态接口，修复了用户头像实时更新和评论不能显示bug
 * Dou Jiawei
+  * 研究了e2e测试文档
+  * 编写了登陆card的测试js文件
 * Fu Yuhan
+  * 用户管理界面
 
 ### 07-22
 
 * Ao Yuchen
+  * blog 图片/点赞/收藏
 * Xu Junhan
+  * coming soon
 * Dou Jiawei
+  * 修复了用户信息界面不能正确查重的bug
+  * 修复了用户信息界面两个编辑面板不能同时编辑的bug
+  * 新增了几个页面的e2e测试
 * Fu Yuhan
+  * coming soon
 
 ### 07-23
 
@@ -181,10 +193,18 @@
 
 ### 07-24
 
-* Ao Yuchen
-* Xu Junhan
-* Dou Jiawei
-* Fu Yuhan
+Ao Yuchen
+
+Xu Junhan
+
+Dou Jiawei
+
+* 完成了e2e测试
+* 修改了管理员删除博客会自动登出的bug
+* 完善了管理界面搜算ban用户等等操作
+* 修改了管理员权限封禁的bug
+
+Fu Yuhan
 
 ## Week4
 
