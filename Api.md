@@ -108,7 +108,7 @@ This is a document of API. First of all, the port is 8088
 
 - type: POST
 
-- arg: Integer uid, Integer type, String content, Integer post_day,String video, String imag, String label, String username, String avatar
+- arg: BlogUtil {Integer uid, Integer type, String content, Integer post_day,String video, String imag, String label, String username, String avatar}
 
 - return: Integer id（代表该动态的存储id）
 
@@ -132,9 +132,28 @@ This is a document of API. First of all, the port is 8088
   
   其中如果非转发，reblog和reblogMongo的值是"null"，如果转发的动态已经删除，那么reblog和reblogMongo返回的是"del",其他拉取动态在此方面的规则类似，不做赘述。
   
-  由于上述格式较为复杂，下面提供一个实例(该例子只含blog和blogMongo)：
+  现在userAvatar和comments也是通过改json返回值返回给我们。请详细看例子中的构造，加油！
   
-  [{"blogMongo":{"comments":[],"id":3,"images":["default","default","default","default"],"labels":[{"content":"学习","flag":0,"id":2},{"content":"游戏","flag":0,"id":3}],"useravatar":"default","video":"null","who_like":[]},"blog":{"com_number":0,"id":3,"like":0,"post_day":"2020-7-15","reblog":0,"type":3,"uid":1,"username":"徐珺涵"}}]
+  由于上述格式较为复杂，下面提供一个实例（在本例中，blog发布者为uid=1的老八，不是转发所以reblog和reblogMongo为“null”，下面有3条评论，见comments，useravatar是老八数据库中存的头像）：
+  
+  [
+  
+       {
+       
+       "reblog":"null",
+       
+       "comments":[{"uid":3,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":1,"username":"敖宇晨"},{"uid":3,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":2,"username":"敖宇晨"},{"uid":2,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":3,"username":"徐珺涵"}],
+       
+       "reblogMongo":"null",
+       
+       "userAvatar":"http://bpic.588ku.com/element_pic/01/55/09/6357474dbf2409c.jpg",
+       
+       "blogMongo":{"comments":[],"content":"自己可见：今天天气很晴朗，鸟儿生生唱","id":2,"images":["default","default","default","default"],"labels":[{"content":"美食","flag":0,"id":5},{"content":"运动","flag":0,"id":7}],"video":"null","who_collect":[],"who_like":[],"who_reblog":[]},
+       
+       "blog":{"coll_number":0,"com_number":3,"id":1,"is_del":0,"like":0,"post_day":"2020-7-15","reblog":0,"reblog_id":-1,"type":3,"uid":1,"username":"老八"}
+       
+       }
+  ]
 
 ### /getBlogsByLabel
 
@@ -219,3 +238,37 @@ JSONObject的格式为：
 - return: boolean
 
 - intro: 评论
+
+### /removeComment
+
+- type: POST
+
+- arg: Integer uid, Integer bid, Integer type
+
+- return boolean
+
+- intro: 删评
+
+### /getBlogById
+
+- type: POST
+
+- arg: Integer uid
+
+- return List < JSONObject>
+
+- intro: 可以查看这个人全部动态。建议用做个人主页和管理员查找某个人的所有动态。
+
+### BUG
+
+- 发布评论：后台mongo不能自己生成cid
+
+- 转发：
+
+  - 原动态转发数不变
+
+  - 原动态的username会被转发者覆盖
+
+- getBlogsLogined 返回的信息不完整
+
+- 收藏依稀好像有点问题

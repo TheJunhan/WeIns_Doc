@@ -22,6 +22,7 @@
     * 附带评论
   * 查看
     * 点击图片查看放大图片
+    * 点击用户名进入个人主页
   * 点赞
     * 点赞完成图标变化
   * 收藏
@@ -35,7 +36,7 @@
   * 点赞数
   * 收藏数
 * 推荐算法
-  * 最近常浏览
+  * 最近常浏览（暂定）
 
 ## Tech Stack
 
@@ -44,11 +45,14 @@
     * Vue.js
   * Unit Test
     * vue@cli-jest
+  * E2E test
+    * cypress
 * Back-end
   * Framework
     * Spring Boot
   * Security
-    * Spring-Boot-Starter-Security
+    * Spring Security
+    * JWT
     * Interceptor
   * Database
     * MySql
@@ -60,9 +64,11 @@
     * Junit5
 * Devops
   * Container
-    * GitHub
+    * Docker
   * CI/CD(optinal)
   * Container Organization(Optional)
+  * Work Control Flow
+    * GitHub
   * More ...
 * More ...
 
