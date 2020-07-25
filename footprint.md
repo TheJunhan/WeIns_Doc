@@ -176,7 +176,7 @@
 * Ao Yuchen
   * blog 图片/点赞/收藏
 * Xu Junhan
-  * coming soon
+  * 后端增加了增加了spring-security，可用性有待进一步确认
 * Dou Jiawei
   * 修复了用户信息界面不能正确查重的bug
   * 修复了用户信息界面两个编辑面板不能同时编辑的bug
@@ -188,6 +188,7 @@
 
 * Ao Yuchen
 * Xu Junhan
+  * spring-security发现前端无法访问，开始学习jwt。
 * Dou Jiawei
 * Fu Yuhan
 
@@ -196,6 +197,7 @@
 Ao Yuchen
 
 Xu Junhan
+* 增加了jwt，前端已经可以使用。
 
 Dou Jiawei
 
