@@ -176,7 +176,7 @@
 * Ao Yuchen
   * blog 图片/点赞/收藏
 * Xu Junhan
-  * coming soon
+  * 后端增加了增加了spring-security，可用性有待进一步确认
 * Dou Jiawei
   * 修复了用户信息界面不能正确查重的bug
   * 修复了用户信息界面两个编辑面板不能同时编辑的bug
@@ -189,6 +189,7 @@
 * Ao Yuchen
   * 动态的转发/评论功能
 * Xu Junhan
+  * spring-security发现前端无法访问，开始学习jwt。
 * Dou Jiawei
 * Fu Yuhan
 
@@ -198,6 +199,7 @@
   * 实现了他人主页以及从公开动态上点击名字进入其主页的功能
   * 至此完成了基本功能的全部接口
 * Xu Junhan
+  * 增加了jwt，前端已经可以使用
 * Dou Jiawei
   * 完成了e2e测试
   * 修改了管理员删除博客会自动登出的bug
