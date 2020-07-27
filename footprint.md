@@ -176,7 +176,7 @@
 * Ao Yuchen
   * blog 图片/点赞/收藏
 * Xu Junhan
-  * 后端增加了增加了spring-security，可用性有待进一步确认
+  * 后端增加了spring-security，可用性有待进一步确认
 * Dou Jiawei
   * 修复了用户信息界面不能正确查重的bug
   * 修复了用户信息界面两个编辑面板不能同时编辑的bug
@@ -216,6 +216,8 @@
 ### 07-27
 
 * Ao Yuchen
+  * 转发的动态增加了引用原动态
+  * 评论的优化
 * Xu Junhan
   * 修改了getBlogsLogined返回值残缺的问题
   * 修改了getBLogsById的接口，变得更为符合业务需求，其他bug在自行测试时并没有发现，有待商榷。
