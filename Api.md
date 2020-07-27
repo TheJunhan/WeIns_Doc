@@ -253,11 +253,11 @@ JSONObject的格式为：
 
 - type: POST
 
-- arg: Integer uid
+- arg: Integer uid, Integer to_see_uid
 
 - return List < JSONObject>
 
-- intro: 可以查看这个人全部动态。建议用做个人主页和管理员查找某个人的所有动态。
+- intro: 表示Id为uid的人想要查看to_see_uid这个人的全部说说，当然也可以用于自己查看自己。
 
 ### BUG
 
