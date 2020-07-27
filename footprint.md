@@ -191,6 +191,8 @@
 * Xu Junhan
   * spring-security发现前端无法访问，开始学习jwt。
 * Dou Jiawei
+  * 完善前后端的基本功能
+  * 继续编写e2e测试
 * Fu Yuhan
   * 整理文档
 
