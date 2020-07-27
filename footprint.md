@@ -215,6 +215,8 @@
 
 * Ao Yuchen
 * Xu Junhan
+  * 修改了getBlogsLogined返回值残缺的问题
+  * 修改了getBLogsById的接口，变得更为符合业务需求，其他bug在自行测试时并没有发现，有待商榷。
 * Dou Jiawei
 * Fu Yuhan
 
