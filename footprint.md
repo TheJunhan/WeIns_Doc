@@ -230,6 +230,9 @@
 ### 07-28
 
 * Ao Yuchen
+  * 上传头像功能
+  * 优化前端的用户权限解析
+  * 优化转发评论后的动态刷新
 * Xu Junhan
 * Dou Jiawei
 * Fu Yuhan
