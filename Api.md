@@ -233,7 +233,7 @@ JSONObject的格式为：
 
 - type: POST
 
-- arg: Integer uid, String username, Integer to_uid, String to_username, Integer bid, String content
+- arg: Integer uid, Integer to_uid, Integer bid, String content, String post_time
 
 - return: boolean
 
@@ -253,8 +253,38 @@ JSONObject的格式为：
 
 - type: POST
 
-- arg: Integer uid
+- arg: Integer uid, Integer to_see_uid
 
 - return List < JSONObject>
 
-- intro: 可以查看这个人全部动态。建议用做个人主页和管理员查找某个人的所有动态。
+- intro: 表示Id为uid的人想要查看to_see_uid这个人的全部说说，当然也可以用于自己查看自己。
+
+### /changeBlog
+
+- type: POST
+
+- arg: Integer uid, Integer bid, String content, Integer type
+
+- return boolean
+
+- intro: 管理员可以修改动态类型，内容只有本人可以修改
+
+### /getSingleBlog
+
+- type: POST
+
+- arg: Integer bid
+
+- return JSONObject
+
+- intro: 返回id为bid的动态
+
+### BUG
+
+- getBlogsById 返回的信息不完整，缺blogMongo
+
+- 点赞依稀还有点问题
+
+- userServiceImpl update 替换成群里的那一段
+
+- 返回的动态最好加上reblog_username一项属性，因为动态上引用原博客需要展示用户名

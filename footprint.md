@@ -176,49 +176,67 @@
 * Ao Yuchen
   * blog 图片/点赞/收藏
 * Xu Junhan
-  * coming soon
+  * 后端增加了spring-security，可用性有待进一步确认
 * Dou Jiawei
   * 修复了用户信息界面不能正确查重的bug
   * 修复了用户信息界面两个编辑面板不能同时编辑的bug
   * 新增了几个页面的e2e测试
 * Fu Yuhan
-  * coming soon
+  * 用户管理员界面
 
 ### 07-23
 
 * Ao Yuchen
+  * 动态的转发/评论功能
 * Xu Junhan
+  * spring-security发现前端无法访问，开始学习jwt。
 * Dou Jiawei
+  * 完善前后端的基本功能
+  * 继续编写e2e测试
 * Fu Yuhan
+  * 整理文档
 
 ### 07-24
 
-Ao Yuchen
-
-Xu Junhan
-
-Dou Jiawei
-
-* 完成了e2e测试
-* 修改了管理员删除博客会自动登出的bug
-* 完善了管理界面搜算ban用户等等操作
-* 修改了管理员权限封禁的bug
-
-Fu Yuhan
+* Ao Yuchen
+  * 实现了他人主页以及从公开动态上点击名字进入其主页的功能
+  * 至此完成了基本功能的全部接口
+* Xu Junhan
+  * 增加了jwt，前端已经可以使用
+* Dou Jiawei
+  * 完成了e2e测试
+  * 修改了管理员删除博客会自动登出的bug
+  * 完善了管理界面搜算ban用户等等操作
+  * 修改了管理员权限封禁的bug
+* Fu Yuhan
+  * 整理文档
 
 ## Week4
 
 ### 07-27
 
 * Ao Yuchen
+  * 转发的动态增加了引用原动态
+  * 评论的优化
 * Xu Junhan
+  * 修改了getBlogsLogined返回值残缺的问题
+  * 修改了getBLogsById的接口，变得更为符合业务需求，其他bug在自行测试时并没有发现，有待商榷。
 * Dou Jiawei
+  * 开始着手编写压力测试和性能测试
+  * 优化前端页面
 * Fu Yuhan
+  * 优化前端页面
 
 ### 07-28
 
 * Ao Yuchen
+  * 上传头像功能
+  * 优化前端的用户权限解析
+  * 优化转发评论后的动态刷新
 * Xu Junhan
+  * 更改写评论接口
+  * 新增返回某个动态接口
+  * 新增修改动态接口
 * Dou Jiawei
 * Fu Yuhan
 
