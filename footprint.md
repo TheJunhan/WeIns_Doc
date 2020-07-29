@@ -243,6 +243,9 @@
 ### 07-29
 
 * Ao Yuchen
+  * 评论时间
+  * 动态文本的换行显示
+  * 评论的删除
 * Xu Junhan
 * Dou Jiawei
 * Fu Yuhan
