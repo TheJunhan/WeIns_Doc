@@ -233,7 +233,7 @@ JSONObject的格式为：
 
 - type: POST
 
-- arg: Integer uid, String username, Integer to_uid, String to_username, Integer bid, String content
+- arg: Integer uid, Integer to_uid, Integer bid, String content, String post_time
 
 - return: boolean
 
@@ -258,6 +258,26 @@ JSONObject的格式为：
 - return List < JSONObject>
 
 - intro: 表示Id为uid的人想要查看to_see_uid这个人的全部说说，当然也可以用于自己查看自己。
+
+### /changeBlog
+
+- type: POST
+
+- arg: Integer uid, Integer bid, String content, Integer type
+
+- return boolean
+
+- intro: 管理员可以修改动态类型，内容只有本人可以修改
+
+### /getSingleBlog
+
+- type: POST
+
+- arg: Integer bid
+
+- return JSONObject
+
+- intro: 返回id为bid的动态
 
 ### BUG
 
