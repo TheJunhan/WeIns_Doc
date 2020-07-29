@@ -261,14 +261,10 @@ JSONObject的格式为：
 
 ### BUG
 
-- 发布评论：后台mongo不能自己生成cid
+- getBlogsById 返回的信息不完整，缺blogMongo
 
-- 转发：
+- 点赞依稀还有点问题
 
-  - 原动态转发数不变
+- userServiceImpl update 替换成群里的那一段
 
-  - 原动态的username会被转发者覆盖
-
-- getBlogsLogined 返回的信息不完整
-
-- 收藏依稀好像有点问题
+- 返回的动态最好加上reblog_username一项属性，因为动态上引用原博客需要展示用户名
