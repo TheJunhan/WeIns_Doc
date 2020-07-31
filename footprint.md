@@ -248,6 +248,8 @@
   * 评论的删除
 * Xu Junhan
 * Dou Jiawei
+  * grafana完成
+  * 测试文件基本完成
 * Fu Yuhan
 
 ### 07-30
@@ -257,11 +259,15 @@
   * 多层评论的样式以及发布回复
 * Xu Junhan
 * Dou Jiawei
+  * 完成性能测试
+  * 着手优化
 * Fu Yuhan
 
 ### 07-31
 
 * Ao Yuchen
+  * 评论折叠
+  * 点击加载更多动态
 * Xu Junhan
 * Dou Jiawei
 * Fu Yuhan
