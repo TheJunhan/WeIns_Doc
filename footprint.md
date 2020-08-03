@@ -285,6 +285,18 @@
 
 ### 08-03
 
+* Ao Yuchen
+  * 着手前端优化
+  * 完善性能测试
+* Xu Junhan
+  * 着手写jwt
+  * 修复token和fliter的bug
+* Dou Jiawei
+  * 继续优化单元测试
+  * 优化性能
+* Fu Yuhan
+  * 完善前端页面
+
 ### 08-04
 
 ### 08-05
