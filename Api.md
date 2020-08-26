@@ -279,6 +279,56 @@ JSONObject的格式为：
 
 - intro: 返回id为bid的动态
 
+### /blog/page/getPublicBlogs
+
+- type: GET
+
+- arg: Integer index, Integer num
+
+- return List<JSONObject>
+
+- intro: 根据num返回一页的博客，公开版。
+
+### /blog/getLabels
+
+- type: GET
+
+- arg: 无
+
+- return List<Label>
+
+- intro: 返回所有label
+
+### /blog/findFuzzyLabels
+
+- type: GET
+
+- arg: String lab
+
+- return List<Label>
+
+- intro: 模糊查询了label
+
+### /user/getByName
+
+- type: GET
+
+- arg: String name
+
+- return User
+
+- intro: 精准查询user
+
+### /user/getByFuzzyName
+
+- type: GET
+
+- arg: String name
+
+- return List<User>
+
+- intro: 模糊查询user
+
 ### BUG
 
 - getBlogsById 返回的信息不完整，缺blogMongo
