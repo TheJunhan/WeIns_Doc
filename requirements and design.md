@@ -66,7 +66,8 @@
     * 。。
     * 。。
 * 安全
-  * 。。。
+  * 使用JWT,用户登录后生成一个token并随着login的response.data回馈给前端保存
+  * 当前端发送需要身份认证的请求时取出token作为headers
 
 # architecture and design
 
@@ -74,9 +75,7 @@
 
 * 前端使用Vue框架，项目目录分层如下
 
-  ![avatar](./pic/f-structor.jpg)
-
-
+  ![front end structor](./pic/f-structor.jpg)
 
 * 目录说明
   * assets：存放全局样式表和图片目录
@@ -90,7 +89,8 @@
 
 * 后端采用Spring boot框架和MVC分层架构，链接Mysql和MangoDB数据库，项目目录如下
 
-  ![avatar](./pic/b-structor.png)
+![back end structor](./pic/b-structor.png)
+  
 * 目录说明
 
   * entity：存放实体类表
