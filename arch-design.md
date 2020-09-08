@@ -28,5 +28,5 @@
   * Constant：存放全局变量列表和常数列表
   * utils：存放工具类和JWT安全文件
   * Interceptor：存放session文件
-  * Repostory:存放repostory类，对接数据库
+  * Repository:存放repository类，对接数据库
   * test:存放测试文件
