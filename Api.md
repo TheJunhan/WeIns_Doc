@@ -6,6 +6,36 @@ This is a document of API. First of all, the port is 8088
 
 ------
 
+### /getByName
+
+- type: GET
+
+- arg: String name
+
+- return User
+
+- intro: 精准查询user
+
+### /getByFuzzyName
+
+- type: GET
+
+- arg: String name
+
+- return List<User.class>
+
+- intro: 模糊查询user
+
+### /getPlainOne
+
+- type: GET
+
+- arg: id
+
+- return: all attributes of user except password
+
+- intro: 安全获取用户信息
+
 ### /getOne
 
 - type: GET
@@ -142,7 +172,7 @@ This is a document of API. First of all, the port is 8088
        
        "reblog":"null",
        
-       "comments":[{"uid":3,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":1,"username":"敖宇晨"},{"uid":3,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":2,"username":"敖宇晨"},{"uid":2,"to_uid":1,"to_username":"老八","content":"老铁没毛病！！","cid":3,"username":"徐珺涵"}],
+       "comments":[{"uid":3,"to_uid":1,"to_username":"老八","content":"I agree with you！！","cid":1,"username":"老七"}],
        
        "reblogMongo":"null",
        
@@ -151,7 +181,7 @@ This is a document of API. First of all, the port is 8088
        "blogMongo":{"comments":[],"content":"自己可见：今天天气很晴朗，鸟儿生生唱","id":2,"images":["default","default","default","default"],"labels":[{"content":"美食","flag":0,"id":5},{"content":"运动","flag":0,"id":7}],"video":"null","who_collect":[],"who_like":[],"who_reblog":[]},
        
        "blog":{"coll_number":0,"com_number":3,"id":1,"is_del":0,"like":0,"post_day":"2020-7-15","reblog":0,"reblog_id":-1,"type":3,"uid":1,"username":"老八"}
-       
+
        }
   ]
 
@@ -279,62 +309,32 @@ JSONObject的格式为：
 
 - intro: 返回id为bid的动态
 
-### /blog/page/getPublicBlogs
+### /page/getPublicBlogs
 
 - type: GET
 
 - arg: Integer index, Integer num
 
-- return List<JSONObject>
+- return List<JSONObject.class>
 
 - intro: 根据num返回一页的博客，公开版。
 
-### /blog/getLabels
+### /getLabels
 
 - type: GET
 
 - arg: 无
 
-- return List<Label>
+- return List<Label.class>
 
 - intro: 返回所有label
 
-### /blog/findFuzzyLabels
+### /findFuzzyLabels
 
 - type: GET
 
 - arg: String lab
 
-- return List<Label>
+- return List<Label.class>
 
 - intro: 模糊查询了label
-
-### /user/getByName
-
-- type: GET
-
-- arg: String name
-
-- return User
-
-- intro: 精准查询user
-
-### /user/getByFuzzyName
-
-- type: GET
-
-- arg: String name
-
-- return List<User>
-
-- intro: 模糊查询user
-
-### BUG
-
-- getBlogsById 返回的信息不完整，缺blogMongo
-
-- 点赞依稀还有点问题
-
-- userServiceImpl update 替换成群里的那一段
-
-- 返回的动态最好加上reblog_username一项属性，因为动态上引用原博客需要展示用户名

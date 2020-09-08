@@ -2,10 +2,10 @@
 
 ## Members
 
-* [Ao Yuchen](https://github.com/Laffery) - a relentless format optimization machines
-* [Dou Jiawei](https://github.com/1047666945) - a radical special effects explorer
-* [Xu Junhan](https://github.com/TheJunhan) - a lonely back-end builders
-* [Fu Yuhan](https://github.com/Tarosweet) - an elegant art supervisor
+* [Ao Yuchen](https://github.com/Laffery) - 前端开发及后端单元测试员
+* [Dou Jiawei](https://github.com/1047666945) - 前端开发及测试员
+* [Xu Junhan](https://github.com/TheJunhan) - 后端开发及服务器部署员
+* [Fu Yuhan](https://github.com/Tarosweet) - 前端开发及文档整理员
 
 ## Files
 
@@ -13,7 +13,9 @@
 * [Meeting Minutes](meeting/)
 * [Schedule](schedule.md)
 * [Footprint](footprint.md)
-* [Api](Api.md)
+* [API](Api.md)
+* [Architecture and Design](arch-design.md)
+* [Function Requires and Non-Function Requires](FR&NFR.md)
 
 ## Learning Resources
 
