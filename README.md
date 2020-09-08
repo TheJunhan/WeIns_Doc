@@ -16,6 +16,7 @@
 * [API](Api.md)
 * [Architecture and Design](arch-design.md)
 * [Function Requires and Non-Function Requires](FR&NFR.md)
+* [Report Slides](PPT.pptx)
 
 ## Learning Resources
 
