@@ -14,7 +14,8 @@
 * [Schedule](schedule.md)
 * [Footprint](footprint.md)
 * [API](Api.md)
-* [Final Report](report.md)
+* [Architecture and Design](arch-design.md)
+* [Function Requires and Non-Function Requires](FR&NFR.md)
 
 ## Learning Resources
 
